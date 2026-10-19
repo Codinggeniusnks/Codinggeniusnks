@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 120" width="100%">
+  <defs>
+    <linearGradient id="cineBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071318"/>
+      <stop offset="50%" stop-color="#0B1623"/>
+      <stop offset="100%" stop-color="#111328"/>
+    </linearGradient>
+    <radialGradient id="spotMint" cx="25%" cy="15%" r="65%">
+      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#071318" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="spotViolet" cx="80%" cy="85%" r="60%">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#111328" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rimBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5EEAD4" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.45"/>
+    </linearGradient>
+    <style>
+      .font-sans { font-family: 'Segoe UI', Inter, system-ui, -apple-system, sans-serif; }
+      .font-mono { font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace; }
+    </style>
+  </defs>
+
+  <rect x="2" y="2" width="876" height="116" rx="22" fill="url(#cineBase)"/>
+  <rect x="2" y="2" width="876" height="116" rx="22" fill="url(#spotMint)"/>
+  <rect x="2" y="2" width="876" height="116" rx="22" fill="url(#spotViolet)"/>
+  <rect x="2" y="2" width="876" height="116" rx="22" fill="none" stroke="url(#rimBorder)" stroke-width="1.4"/>
+
+  <rect x="2" y="26" width="5" height="68" rx="2.5" fill="#5EEAD4"/>
+
+  <text x="34" y="38" fill="#5EEAD4" font-size="11.5" font-weight="800" letter-spacing="3" class="font-sans">INITIALIZE CONNECTION // NETWORK DOCK</text>
+  <text x="34" y="68" fill="#F8FAFC" font-size="18" font-weight="800" class="font-sans">Have an AI/ML model to train, an open-source idea, or a project worth building?</text>
+  <text x="34" y="94" fill="#94A3B8" font-size="13" class="font-sans">Let's plug in and start a conversation — click a floating node below to connect.</text>
+</svg>

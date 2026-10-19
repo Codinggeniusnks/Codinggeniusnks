@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 310" width="100%">
+  <defs>
+    <!-- Cinematic Deep Glass Base -->
+    <linearGradient id="cineBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071318"/>
+      <stop offset="50%" stop-color="#0B1623"/>
+      <stop offset="100%" stop-color="#111328"/>
+    </linearGradient>
+
+    <radialGradient id="spotMint" cx="20%" cy="10%" r="65%">
+      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.28"/>
+      <stop offset="50%" stop-color="#14B8A6" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#071318" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="spotViolet" cx="85%" cy="90%" r="60%">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.22"/>
+      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#111328" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="rimBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5EEAD4" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.45"/>
+    </linearGradient>
+
+    <linearGradient id="innerCardFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061017" stop-opacity="0.82"/>
+      <stop offset="100%" stop-color="#0B1320" stop-opacity="0.90"/>
+    </linearGradient>
+
+    <linearGradient id="innerCardRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5EEAD4" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.18"/>
+    </linearGradient>
+
+    <!-- Waving Light Shimmer Gradients -->
+    <linearGradient id="waveMint" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5EEAD4" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#99F6E4" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <style>
+      .font-sans { font-family: 'Segoe UI', Inter, system-ui, -apple-system, sans-serif; }
+      .font-mono { font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace; }
+      @keyframes wavePill {
+        0% { stroke-dashoffset: 360; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .pill-shimmer {
+        stroke-dasharray: 85 275;
+        animation: wavePill 4.2s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Outer Rounded Cinematic Glass Frame -->
+  <rect x="2" y="2" width="876" height="306" rx="22" fill="url(#cineBase)"/>
+  <rect x="2" y="2" width="876" height="306" rx="22" fill="url(#spotMint)"/>
+  <rect x="2" y="2" width="876" height="306" rx="22" fill="url(#spotViolet)"/>
+  <rect x="2" y="2" width="876" height="306" rx="22" fill="none" stroke="url(#rimBorder)" stroke-width="1.4"/>
+
+  <!-- Section Eyebrow Header -->
+  <text x="34" y="40" fill="#5EEAD4" font-size="12" font-weight="800" letter-spacing="3.2" class="font-sans">NEURAL TECH STACK MATRIX</text>
+  <text x="688" y="40" fill="#64748B" font-size="11" class="font-mono">SYS // CAPABILITIES</text>
+
+  <!-- ═══ COLUMN 1: AI / ML & DATA SCIENCE ═══ -->
+  <g transform="translate(28, 58)">
+    <rect x="0" y="0" width="262" height="226" rx="18" fill="url(#innerCardFill)" stroke="url(#innerCardRim)" stroke-width="1.2"/>
+    <rect x="0" y="28" width="5" height="170" rx="2.5" fill="#5EEAD4"/>
+
+    <text x="22" y="34" fill="#F8FAFC" font-size="16" font-weight="800" class="font-sans">AI / ML &amp; Data Science</text>
+    <text x="22" y="54" fill="#5EEAD4" font-size="11.5" class="font-sans">Deep Learning &amp; Computer Vision</text>
+
+    <!-- Curved Floating Skill Pills Row 1 -->
+    <rect x="22" y="72" width="104" height="30" rx="15" fill="#0A1922" stroke="#5EEAD4" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="38" cy="87" r="4" fill="#5EEAD4"/>
+    <text x="48" y="91" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">Python</text>
+
+    <rect x="136" y="72" width="104" height="30" rx="15" fill="#0A1922" stroke="#5EEAD4" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="152" cy="87" r="4" fill="#38BDF8"/>
+    <text x="162" y="91" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">PyTorch</text>
+
+    <!-- Curved Floating Skill Pills Row 2 -->
+    <rect x="22" y="110" width="104" height="30" rx="15" fill="#0A1922" stroke="#5EEAD4" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="36" cy="125" r="4" fill="#5EEAD4"/>
+    <text x="45" y="129" fill="#F8FAFC" font-size="11" font-weight="700" class="font-sans">TensorFlow</text>
+
+    <rect x="136" y="110" width="104" height="30" rx="15" fill="#0A1922" stroke="#5EEAD4" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="150" cy="125" r="4" fill="#38BDF8"/>
+    <text x="159" y="129" fill="#F8FAFC" font-size="11" font-weight="700" class="font-sans">Scikit-Learn</text>
+
+    <!-- Curved Floating Skill Pills Row 3 -->
+    <rect x="22" y="148" width="104" height="30" rx="15" fill="#0A1922" stroke="#5EEAD4" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="38" cy="163" r="4" fill="#818CF8"/>
+    <text x="48" y="167" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">OpenCV</text>
+
+    <rect x="136" y="148" width="104" height="30" rx="15" fill="#0A1922" stroke="#5EEAD4" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="152" cy="163" r="4" fill="#5EEAD4"/>
+    <text x="162" y="167" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">Anaconda</text>
+
+    <!-- Bottom Waving Light Focus Pill -->
+    <rect x="22" y="188" width="218" height="26" rx="13" fill="#071318" stroke="#5EEAD4" stroke-opacity="0.25"/>
+    <rect x="22" y="188" width="218" height="26" rx="13" fill="none" stroke="url(#waveMint)" stroke-width="1.5" class="pill-shimmer"/>
+    <text x="131" y="205" fill="#5EEAD4" font-size="10.5" font-weight="700" text-anchor="middle" class="font-mono">● Focus: Deep Learning &amp; CV</text>
+  </g>
+
+  <!-- ═══ COLUMN 2: FULL STACK & FRONTEND ═══ -->
+  <g transform="translate(309, 58)">
+    <rect x="0" y="0" width="262" height="226" rx="18" fill="url(#innerCardFill)" stroke="url(#innerCardRim)" stroke-width="1.2"/>
+    <rect x="0" y="28" width="5" height="170" rx="2.5" fill="#38BDF8"/>
+
+    <text x="22" y="34" fill="#F8FAFC" font-size="16" font-weight="800" class="font-sans">Full Stack &amp; Frontend</text>
+    <text x="22" y="54" fill="#38BDF8" font-size="11.5" class="font-sans">Modern Reactive Web Applications</text>
+
+    <!-- Curved Floating Skill Pills Row 1 -->
+    <rect x="22" y="72" width="104" height="30" rx="15" fill="#0A1926" stroke="#38BDF8" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="38" cy="87" r="4" fill="#38BDF8"/>
+    <text x="48" y="91" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">TypeScript</text>
+
+    <rect x="136" y="72" width="104" height="30" rx="15" fill="#0A1926" stroke="#38BDF8" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="152" cy="87" r="4" fill="#5EEAD4"/>
+    <text x="162" y="91" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">JavaScript</text>
+
+    <!-- Curved Floating Skill Pills Row 2 -->
+    <rect x="22" y="110" width="104" height="30" rx="15" fill="#0A1926" stroke="#38BDF8" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="38" cy="125" r="4" fill="#38BDF8"/>
+    <text x="48" y="129" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">React.js</text>
+
+    <rect x="136" y="110" width="104" height="30" rx="15" fill="#0A1926" stroke="#38BDF8" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="152" cy="125" r="4" fill="#818CF8"/>
+    <text x="162" y="129" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">Next.js</text>
+
+    <!-- Curved Floating Skill Pills Row 3 -->
+    <rect x="22" y="148" width="104" height="30" rx="15" fill="#0A1926" stroke="#38BDF8" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="38" cy="163" r="4" fill="#5EEAD4"/>
+    <text x="48" y="167" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">Tailwind</text>
+
+    <rect x="136" y="148" width="104" height="30" rx="15" fill="#0A1926" stroke="#38BDF8" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="152" cy="163" r="4" fill="#38BDF8"/>
+    <text x="162" y="167" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">Node.js</text>
+
+    <!-- Bottom Waving Light Focus Pill -->
+    <rect x="22" y="188" width="218" height="26" rx="13" fill="#071318" stroke="#38BDF8" stroke-opacity="0.25"/>
+    <rect x="22" y="188" width="218" height="26" rx="13" fill="none" stroke="url(#waveMint)" stroke-width="1.5" class="pill-shimmer"/>
+    <text x="131" y="205" fill="#38BDF8" font-size="10.5" font-weight="700" text-anchor="middle" class="font-mono">● Focus: Modern Web Apps</text>
+  </g>
+
+  <!-- ═══ COLUMN 3: BACKEND, CLOUD & DEVOPS ═══ -->
+  <g transform="translate(590, 58)">
+    <rect x="0" y="0" width="262" height="226" rx="18" fill="url(#innerCardFill)" stroke="url(#innerCardRim)" stroke-width="1.2"/>
+    <rect x="0" y="28" width="5" height="170" rx="2.5" fill="#818CF8"/>
+
+    <text x="22" y="34" fill="#F8FAFC" font-size="16" font-weight="800" class="font-sans">Backend &amp; DevOps</text>
+    <text x="22" y="54" fill="#A78BFA" font-size="11.5" class="font-sans">Scalable APIs, Data &amp; Containers</text>
+
+    <!-- Curved Floating Skill Pills Row 1 -->
+    <rect x="22" y="72" width="104" height="30" rx="15" fill="#0D1628" stroke="#818CF8" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="38" cy="87" r="4" fill="#5EEAD4"/>
+    <text x="48" y="91" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">FastAPI</text>
+
+    <rect x="136" y="72" width="104" height="30" rx="15" fill="#0D1628" stroke="#818CF8" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="152" cy="87" r="4" fill="#818CF8"/>
+    <text x="162" y="91" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">Express</text>
+
+    <!-- Curved Floating Skill Pills Row 2 -->
+    <rect x="22" y="110" width="104" height="30" rx="15" fill="#0D1628" stroke="#818CF8" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="38" cy="125" r="4" fill="#38BDF8"/>
+    <text x="48" y="129" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">PostgreSQL</text>
+
+    <rect x="136" y="110" width="104" height="30" rx="15" fill="#0D1628" stroke="#818CF8" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="152" cy="125" r="4" fill="#5EEAD4"/>
+    <text x="162" y="129" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">MongoDB</text>
+
+    <!-- Curved Floating Skill Pills Row 3 -->
+    <rect x="22" y="148" width="104" height="30" rx="15" fill="#0D1628" stroke="#818CF8" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="38" cy="163" r="4" fill="#38BDF8"/>
+    <text x="48" y="167" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">Docker</text>
+
+    <rect x="136" y="148" width="104" height="30" rx="15" fill="#0D1628" stroke="#818CF8" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="152" cy="163" r="4" fill="#A78BFA"/>
+    <text x="162" y="167" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">Git &amp; Linux</text>
+
+    <!-- Bottom Waving Light Focus Pill -->
+    <rect x="22" y="188" width="218" height="26" rx="13" fill="#071318" stroke="#818CF8" stroke-opacity="0.25"/>
+    <rect x="22" y="188" width="218" height="26" rx="13" fill="none" stroke="url(#waveMint)" stroke-width="1.5" class="pill-shimmer"/>
+    <text x="131" y="205" fill="#A78BFA" font-size="10.5" font-weight="700" text-anchor="middle" class="font-mono">● Focus: Scalable Systems</text>
+  </g>
+</svg>
