@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="100%">
+  <defs>
+    <!-- Deep Cyberpunk Glass Background Gradient -->
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070214"/>
+      <stop offset="50%" stop-color="#0F0529"/>
+      <stop offset="100%" stop-color="#060B23"/>
+    </linearGradient>
+
+    <!-- Frosted Glass Panel Gradient -->
+    <linearGradient id="glassSurface" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.11"/>
+      <stop offset="40%" stop-color="#A855F7" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#00F5FF" stop-opacity="0.04"/>
+    </linearGradient>
+
+    <!-- Specular Glass Border Gradient -->
+    <linearGradient id="glassBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.75"/>
+      <stop offset="50%" stop-color="#B5179E" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#7209B7" stop-opacity="0.75"/>
+    </linearGradient>
+
+    <!-- Progress Bar Gradients -->
+    <linearGradient id="cyanPink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5FF"/>
+      <stop offset="100%" stop-color="#FF007F"/>
+    </linearGradient>
+    <linearGradient id="purpleCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9D4EDD"/>
+      <stop offset="100%" stop-color="#00F5FF"/>
+    </linearGradient>
+    <linearGradient id="pinkPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF007F"/>
+      <stop offset="100%" stop-color="#9D4EDD"/>
+    </linearGradient>
+
+    <!-- Ambient Glow Blobs -->
+    <radialGradient id="blobCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#00F5FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobPink" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF007F" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#FF007F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobViolet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7209B7" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#7209B7" stop-opacity="0"/>
+    </radialGradient>
+
+    <style>
+      .font-mono { font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace; }
+      .font-sans { font-family: 'Segoe UI', Inter, system-ui, -apple-system, sans-serif; }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.75; }
+        50% { opacity: 1; }
+      }
+      @keyframes scanline {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(300px); }
+      }
+      .pulse { animation: pulseGlow 3s infinite ease-in-out; }
+    </style>
+  </defs>
+
+  <!-- Outer Canvas Rounded Backdrop -->
+  <rect x="2" y="2" width="876" height="336" rx="22" fill="url(#bgGlow)" stroke="url(#glassBorder)" stroke-width="1.5"/>
+
+  <!-- Subtle Grid Overlay -->
+  <g stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="60" x2="880" y2="60"/>
+    <line x1="0" y1="120" x2="880" y2="120"/>
+    <line x1="0" y1="180" x2="880" y2="180"/>
+    <line x1="0" y1="240" x2="880" y2="240"/>
+    <line x1="0" y1="300" x2="880" y2="300"/>
+    <line x1="140" y1="0" x2="140" y2="340"/>
+    <line x1="280" y1="0" x2="280" y2="340"/>
+    <line x1="420" y1="0" x2="420" y2="340"/>
+    <line x1="560" y1="0" x2="560" y2="340"/>
+    <line x1="700" y1="0" x2="700" y2="340"/>
+  </g>
+
+  <!-- Ambient Neon Orbs Behind Glass Panels -->
+  <circle cx="150" cy="110" r="130" fill="url(#blobCyan)" class="pulse"/>
+  <circle cx="450" cy="240" r="150" fill="url(#blobViolet)" class="pulse"/>
+  <circle cx="740" cy="120" r="130" fill="url(#blobPink)" class="pulse"/>
+
+  <!-- Top OS Window Title Bar -->
+  <rect x="16" y="14" width="848" height="34" rx="10" fill="url(#glassSurface)" stroke="url(#glassBorder)" stroke-width="1"/>
+  <circle cx="36" cy="31" r="5.5" fill="#FF007F"/>
+  <circle cx="54" cy="31" r="5.5" fill="#FFB703"/>
+  <circle cx="72" cy="31" r="5.5" fill="#00F5FF"/>
+  <text x="96" y="35" fill="#E2E8F0" font-size="12" font-weight="600" class="font-mono">SYS://KAI_SHENG/HUD_EXECUTIVE_DASHBOARD.exe</text>
+  <text x="725" y="35" fill="#00F5FF" font-size="11" font-weight="600" class="font-mono">● STATUS: ONLINE</text>
+
+  <!-- ═══ FLOATING GLASS WINDOW 1: SYSTEM IDENTITY & CORE TELEMETRY ═══ -->
+  <g transform="translate(16, 62)">
+    <rect x="0" y="0" width="270" height="260" rx="16" fill="url(#glassSurface)" stroke="url(#glassBorder)" stroke-width="1.2"/>
+    <!-- Top Specular Highlight -->
+    <line x1="16" y1="1" x2="254" y2="1" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/>
+    <!-- Window Header -->
+    <rect x="12" y="12" width="246" height="26" rx="7" fill="#09021A" fill-opacity="0.55"/>
+    <text x="24" y="29" fill="#00F5FF" font-size="11" font-weight="700" class="font-mono">01 // IDENTITY_NODE</text>
+    <circle cx="244" cy="25" r="4" fill="#00F5FF"/>
+
+    <!-- Content -->
+    <text x="20" y="62" fill="#FFFFFF" font-size="17" font-weight="700" class="font-sans">Ng Kai Sheng</text>
+    <text x="20" y="80" fill="#FF007F" font-size="11.5" font-weight="600" class="font-mono">&gt;_ AI • ML • Full Stack Dev</text>
+
+    <!-- Mini Glass Metric Pills -->
+    <rect x="18" y="96" width="112" height="58" rx="10" fill="#09021A" fill-opacity="0.5" stroke="#00F5FF" stroke-opacity="0.35" stroke-width="1"/>
+    <text x="30" y="116" fill="#94A3B8" font-size="10" class="font-mono">PRIMARY FOCUS</text>
+    <text x="30" y="138" fill="#00F5FF" font-size="14" font-weight="700" class="font-sans">AI &amp; ML</text>
+
+    <rect x="140" y="96" width="112" height="58" rx="10" fill="#09021A" fill-opacity="0.5" stroke="#FF007F" stroke-opacity="0.35" stroke-width="1"/>
+    <text x="152" y="116" fill="#94A3B8" font-size="10" class="font-mono">ARCHITECTURE</text>
+    <text x="152" y="138" fill="#FF007F" font-size="14" font-weight="700" class="font-sans">Full Stack</text>
+
+    <!-- Code Philosophy Box -->
+    <rect x="18" y="166" width="234" height="78" rx="10" fill="#060112" fill-opacity="0.65" stroke="#7209B7" stroke-opacity="0.5" stroke-width="1"/>
+    <text x="30" y="186" fill="#C77DFF" font-size="11" class="font-mono">while (curiosity) {</text>
+    <text x="44" y="203" fill="#00F5FF" font-size="11" class="font-mono">learn(); build();</text>
+    <text x="44" y="220" fill="#FF007F" font-size="11" class="font-mono">improve();</text>
+    <text x="30" y="235" fill="#C77DFF" font-size="11" class="font-mono">}</text>
+  </g>
+
+  <!-- ═══ FLOATING GLASS WINDOW 2: DOMAIN PROFICIENCY MATRIX ═══ -->
+  <g transform="translate(302, 62)">
+    <rect x="0" y="0" width="276" height="260" rx="16" fill="url(#glassSurface)" stroke="url(#glassBorder)" stroke-width="1.2"/>
+    <line x1="16" y1="1" x2="260" y2="1" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/>
+    <rect x="12" y="12" width="252" height="26" rx="7" fill="#09021A" fill-opacity="0.55"/>
+    <text x="24" y="29" fill="#FF007F" font-size="11" font-weight="700" class="font-mono">02 // CAPABILITY_METRICS</text>
+    <circle cx="250" cy="25" r="4" fill="#FF007F"/>
+
+    <!-- Bar 1 -->
+    <text x="20" y="62" fill="#E2E8F0" font-size="11.5" font-weight="600" class="font-sans">AI / Machine Learning</text>
+    <text x="224" y="62" fill="#00F5FF" font-size="11" font-weight="700" class="font-mono">92%</text>
+    <rect x="20" y="70" width="236" height="8" rx="4" fill="#09021A" fill-opacity="0.8"/>
+    <rect x="20" y="70" width="217" height="8" rx="4" fill="url(#cyanPink)"/>
+
+    <!-- Bar 2 -->
+    <text x="20" y="104" fill="#E2E8F0" font-size="11.5" font-weight="600" class="font-sans">Full Stack Engineering</text>
+    <text x="224" y="104" fill="#00F5FF" font-size="11" font-weight="700" class="font-mono">88%</text>
+    <rect x="20" y="112" width="236" height="8" rx="4" fill="#09021A" fill-opacity="0.8"/>
+    <rect x="20" y="112" width="208" height="8" rx="4" fill="url(#purpleCyan)"/>
+
+    <!-- Bar 3 -->
+    <text x="20" y="146" fill="#E2E8F0" font-size="11.5" font-weight="600" class="font-sans">Backend APIs &amp; Data</text>
+    <text x="224" y="146" fill="#FF007F" font-size="11" font-weight="700" class="font-mono">85%</text>
+    <rect x="20" y="154" width="236" height="8" rx="4" fill="#09021A" fill-opacity="0.8"/>
+    <rect x="20" y="154" width="200" height="8" rx="4" fill="url(#pinkPurple)"/>
+
+    <!-- Bar 4 -->
+    <text x="20" y="188" fill="#E2E8F0" font-size="11.5" font-weight="600" class="font-sans">Open Source &amp; DevOps</text>
+    <text x="224" y="188" fill="#C77DFF" font-size="11" font-weight="700" class="font-mono">82%</text>
+    <rect x="20" y="196" width="236" height="8" rx="4" fill="#09021A" fill-opacity="0.8"/>
+    <rect x="20" y="196" width="193" height="8" rx="4" fill="url(#cyanPink)"/>
+
+    <!-- Footer Pill -->
+    <rect x="20" y="218" width="236" height="28" rx="7" fill="#09021A" fill-opacity="0.55" stroke="#00F5FF" stroke-opacity="0.25"/>
+    <text x="42" y="236" fill="#A9FEF7" font-size="10.5" class="font-mono">⚡ IDEAS → CODE → REAL IMPACT</text>
+  </g>
+
+  <!-- ═══ FLOATING GLASS WINDOW 3: WORKFLOW & PIPELINE HUD ═══ -->
+  <g transform="translate(594, 62)">
+    <rect x="0" y="0" width="270" height="260" rx="16" fill="url(#glassSurface)" stroke="url(#glassBorder)" stroke-width="1.2"/>
+    <line x1="16" y1="1" x2="254" y2="1" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/>
+    <rect x="12" y="12" width="246" height="26" rx="7" fill="#09021A" fill-opacity="0.55"/>
+    <text x="24" y="29" fill="#C77DFF" font-size="11" font-weight="700" class="font-mono">03 // NEURAL_PIPELINE</text>
+    <circle cx="244" cy="25" r="4" fill="#C77DFF"/>
+
+    <!-- Pipeline Nodes -->
+    <g transform="translate(20, 52)">
+      <rect x="0" y="0" width="230" height="40" rx="9" fill="#09021A" fill-opacity="0.55" stroke="#00F5FF" stroke-opacity="0.4"/>
+      <circle cx="22" cy="20" r="6" fill="#00F5FF"/>
+      <text x="38" y="18" fill="#FFFFFF" font-size="11.5" font-weight="700" class="font-sans">01. Research &amp; Ideation</text>
+      <text x="38" y="32" fill="#94A3B8" font-size="9.5" class="font-mono">Problem framing • Data exploration</text>
+    </g>
+
+    <g transform="translate(20, 102)">
+      <rect x="0" y="0" width="230" height="40" rx="9" fill="#09021A" fill-opacity="0.55" stroke="#9D4EDD" stroke-opacity="0.4"/>
+      <circle cx="22" cy="20" r="6" fill="#9D4EDD"/>
+      <text x="38" y="18" fill="#FFFFFF" font-size="11.5" font-weight="700" class="font-sans">02. Model &amp; System Design</text>
+      <text x="38" y="32" fill="#94A3B8" font-size="9.5" class="font-mono">PyTorch / TensorFlow • FastAPI</text>
+    </g>
+
+    <g transform="translate(20, 152)">
+      <rect x="0" y="0" width="230" height="40" rx="9" fill="#09021A" fill-opacity="0.55" stroke="#FF007F" stroke-opacity="0.4"/>
+      <circle cx="22" cy="20" r="6" fill="#FF007F"/>
+      <text x="38" y="18" fill="#FFFFFF" font-size="11.5" font-weight="700" class="font-sans">03. Full Stack Integration</text>
+      <text x="38" y="32" fill="#94A3B8" font-size="9.5" class="font-mono">React • Next.js • TypeScript UI</text>
+    </g>
+
+    <g transform="translate(20, 202)">
+      <rect x="0" y="0" width="230" height="42" rx="9" fill="#09021A" fill-opacity="0.55" stroke="#00F5FF" stroke-opacity="0.4"/>
+      <circle cx="22" cy="21" r="6" fill="#00F5FF"/>
+      <text x="38" y="18" fill="#FFFFFF" font-size="11.5" font-weight="700" class="font-sans">04. Deploy &amp; Iterate</text>
+      <text x="38" y="32" fill="#94A3B8" font-size="9.5" class="font-mono">Docker • CI/CD • Real Impact 夢</text>
+    </g>
+  </g>
+</svg>
