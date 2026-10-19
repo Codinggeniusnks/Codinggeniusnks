@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 310" width="100%">
+  <defs>
+    <linearGradient id="bgDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1324"/>
+      <stop offset="50%" stop-color="#13192E"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <linearGradient id="glassSurface" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="50%" stop-color="#64D2FF" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0.04"/>
+    </linearGradient>
+
+    <linearGradient id="glassBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64D2FF" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#A78BFA" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#5EEAD4" stop-opacity="0.45"/>
+    </linearGradient>
+
+    <radialGradient id="ambientSky" cx="25%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#64D2FF" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#64D2FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ambientViolet" cx="80%" cy="75%" r="55%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+
+    <style>
+      .font-mono { font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace; }
+      .font-sans { font-family: 'Segoe UI', Inter, system-ui, -apple-system, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Outer Floating Glass Window -->
+  <rect x="2" y="2" width="556" height="306" rx="18" fill="url(#bgDark)" stroke="url(#glassBorder)" stroke-width="1.5"/>
+  <circle cx="140" cy="95" r="140" fill="url(#ambientSky)"/>
+  <circle cx="430" cy="230" r="140" fill="url(#ambientViolet)"/>
+
+  <!-- Window Title Bar -->
+  <rect x="14" y="12" width="532" height="30" rx="9" fill="url(#glassSurface)" stroke="url(#glassBorder)" stroke-width="1"/>
+  <circle cx="32" cy="27" r="5" fill="#F472B6"/>
+  <circle cx="48" cy="27" r="5" fill="#FBBF24"/>
+  <circle cx="64" cy="27" r="5" fill="#5EEAD4"/>
+  <text x="84" y="31" fill="#E2E8F0" font-size="11" font-weight="600" class="font-mono">window://profile-inspector.glass</text>
+  <text x="438" y="31" fill="#5EEAD4" font-size="10" font-weight="600" class="font-mono">● TELEMETRY</text>
+
+  <!-- Hero Bio Header inside Glass Window -->
+  <text x="26" y="66" fill="#F8FAFC" font-size="16" font-weight="700" class="font-sans">&gt;_ Curiosity fuels everything I build.</text>
+  <text x="26" y="86" fill="#CBD5E1" font-size="11.5" class="font-sans">I'm <tspan fill="#64D2FF" font-weight="700">KAI SHENG (Ng Kai Sheng)</tspan> — an <tspan fill="#C4B5FD" font-weight="600">AI • ML • Full Stack Developer</tspan> crafting</text>
+  <text x="26" y="102" fill="#CBD5E1" font-size="11.5" class="font-sans">intelligent models, modern web applications, and real-world impact.</text>
+
+  <!-- Frosted Glass Table Rows -->
+  <!-- Row 1: Core Domains -->
+  <g transform="translate(18, 114)">
+    <rect x="0" y="0" width="524" height="33" rx="8" fill="url(#glassSurface)" stroke="#64D2FF" stroke-opacity="0.22" stroke-width="1"/>
+    <text x="14" y="21" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">🧠 Core Domains</text>
+    <text x="145" y="21" fill="#CBD5E1" font-size="11" class="font-mono">Machine Learning · Full Stack · Open Source</text>
+    <rect x="434" y="6.5" width="78" height="20" rx="6" fill="#0F172A" fill-opacity="0.75" stroke="#5EEAD4" stroke-opacity="0.5"/>
+    <text x="453" y="20" fill="#5EEAD4" font-size="10" font-weight="700" class="font-mono">ACTIVE</text>
+  </g>
+
+  <!-- Row 2: Building -->
+  <g transform="translate(18, 152)">
+    <rect x="0" y="0" width="524" height="33" rx="8" fill="url(#glassSurface)" stroke="#A78BFA" stroke-opacity="0.22" stroke-width="1"/>
+    <text x="14" y="21" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">🔭 Building</text>
+    <text x="145" y="21" fill="#CBD5E1" font-size="11" class="font-sans">AI-driven apps, intelligent workflows &amp; tools</text>
+    <rect x="434" y="6.5" width="78" height="20" rx="6" fill="#0F172A" fill-opacity="0.75" stroke="#64D2FF" stroke-opacity="0.5"/>
+    <text x="441" y="20" fill="#64D2FF" font-size="10" font-weight="700" class="font-mono">BUILDING</text>
+  </g>
+
+  <!-- Row 3: Exploring -->
+  <g transform="translate(18, 190)">
+    <rect x="0" y="0" width="524" height="33" rx="8" fill="url(#glassSurface)" stroke="#C4B5FD" stroke-opacity="0.22" stroke-width="1"/>
+    <text x="14" y="21" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">🌱 Exploring</text>
+    <text x="145" y="21" fill="#CBD5E1" font-size="11" class="font-sans">Deep Learning, LLM agents &amp; cloud-native stacks</text>
+    <rect x="434" y="6.5" width="78" height="20" rx="6" fill="#0F172A" fill-opacity="0.75" stroke="#C4B5FD" stroke-opacity="0.5"/>
+    <text x="441" y="20" fill="#C4B5FD" font-size="10" font-weight="700" class="font-mono">LEARNING</text>
+  </g>
+
+  <!-- Row 4: Collaboration -->
+  <g transform="translate(18, 228)">
+    <rect x="0" y="0" width="524" height="33" rx="8" fill="url(#glassSurface)" stroke="#5EEAD4" stroke-opacity="0.22" stroke-width="1"/>
+    <text x="14" y="21" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">🤝 Collaborating</text>
+    <text x="145" y="21" fill="#CBD5E1" font-size="11" class="font-sans">Open-source AI/ML utilities &amp; web engineering</text>
+    <rect x="434" y="6.5" width="78" height="20" rx="6" fill="#0F172A" fill-opacity="0.75" stroke="#5EEAD4" stroke-opacity="0.5"/>
+    <text x="458" y="20" fill="#5EEAD4" font-size="10" font-weight="700" class="font-mono">OPEN</text>
+  </g>
+
+  <!-- Row 5: Philosophy -->
+  <g transform="translate(18, 266)">
+    <rect x="0" y="0" width="524" height="31" rx="8" fill="url(#glassSurface)" stroke="#F472B6" stroke-opacity="0.22" stroke-width="1"/>
+    <text x="14" y="20" fill="#F8FAFC" font-size="11.5" font-weight="700" class="font-sans">✨ Philosophy</text>
+    <text x="145" y="20" fill="#E2E8F0" font-size="11" font-style="italic" class="font-sans">"Better tomorrow through tech — Learn • Build • Improve"</text>
+    <rect x="434" y="5.5" width="78" height="20" rx="6" fill="#0F172A" fill-opacity="0.75" stroke="#F472B6" stroke-opacity="0.5"/>
+    <text x="458" y="19" fill="#F472B6" font-size="10" font-weight="700" class="font-mono">CORE</text>
+  </g>
+</svg>
