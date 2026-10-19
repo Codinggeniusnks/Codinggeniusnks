@@ -33,7 +33,7 @@
     <img src="https://img.shields.io/github/stars/Codinggeniusnks?style=for-the-badge&logo=starship&logoColor=00F5FF&label=STARS&labelColor=090117&color=7209B7" alt="GitHub Stars" />
   </a>
   &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=Codinggeniusnks&style=for-the-badge&color=00F5FF&labelColor=090117&label=PROFILE+VIEWS" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=Codinggeniusnks&style=for-the-badge&color=ff007f&label=PROFILE+VIEWS" alt="Profile Views" />
 </p>
 
 <br />
@@ -138,7 +138,7 @@
 <br />
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Codinggeniusnks&bg_color=090117&color=00F5FF&line=FF007F&point=00F5FF&area=true&area_color=7209B7&hide_border=true&radius=16&custom_title=KAI%20SHENG%27S%20NEURAL%20CONTRIBUTION%20MATRIX" width="95%" alt="KAI SHENG's Cyberpunk Contribution Activity Graph" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Codinggeniusnks&theme=radical" width="700" alt="KAI SHENG's Cyberpunk Contribution Activity Graph" />
 </p>
 
 <br />
