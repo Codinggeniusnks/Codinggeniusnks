@@ -142,10 +142,6 @@
   </a>
 </p>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Codinggeniusnks&style=flat-square&color=115e59&label=TELEMETRY+VIEWS" alt="Profile Views" />
-</p>
-
 <p align="center"><samp>&gt;_ System status: ONLINE · Thanks for stopping by. See you in the next commit. 夢</samp></p>
 
 <!-- ─── SOFT EYE-COMFORT CAPSULE RENDER WAVING FOOTER ─── -->
