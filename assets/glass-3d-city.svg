@@ -1,28 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 540" width="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 510" width="100%">
   <defs>
-    <!-- Soft Eye-Comfort Dark Slate & Deep Indigo Background -->
-    <linearGradient id="bgDark" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0B1120"/>
-      <stop offset="50%" stop-color="#111827"/>
-      <stop offset="100%" stop-color="#0F172A"/>
+    <!-- Cinematic Deep Glass Base -->
+    <linearGradient id="cineBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071318"/>
+      <stop offset="50%" stop-color="#0B1623"/>
+      <stop offset="100%" stop-color="#111328"/>
     </linearGradient>
 
-    <!-- Frosted Glass Panel Gradient -->
-    <linearGradient id="glassCard" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.07"/>
-      <stop offset="50%" stop-color="#64D2FF" stop-opacity="0.03"/>
-      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0.04"/>
+    <radialGradient id="spotMint" cx="25%" cy="15%" r="65%">
+      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.28"/>
+      <stop offset="45%" stop-color="#14B8A6" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#071318" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="spotViolet" cx="82%" cy="88%" r="60%">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.24"/>
+      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#111328" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="rimBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5EEAD4" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.45"/>
     </linearGradient>
 
-    <!-- Soft Glass Border Gradient -->
-    <linearGradient id="glassStroke" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#5EEAD4" stop-opacity="0.45"/>
-      <stop offset="50%" stop-color="#64D2FF" stop-opacity="0.30"/>
-      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0.45"/>
+    <linearGradient id="innerCardFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061017" stop-opacity="0.78"/>
+      <stop offset="100%" stop-color="#0B1320" stop-opacity="0.88"/>
     </linearGradient>
 
-    <!-- 3D Isometric Cube Gradients (Soft Mint / Seafoam / Sky / Lavender) -->
-    <!-- Level 4 (Tallest Skyscraper - Soft Mint/Aqua) -->
+    <linearGradient id="innerCardRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5EEAD4" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.18"/>
+    </linearGradient>
+
+    <!-- 3D Isometric Cube Gradients (Soft Mint / Seafoam / Sky / Indigo) -->
     <linearGradient id="topL4" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#99F6E4"/>
       <stop offset="100%" stop-color="#5EEAD4"/>
@@ -36,328 +49,245 @@
       <stop offset="100%" stop-color="#0F766E"/>
     </linearGradient>
 
-    <!-- Level 3 (High - Soft Sky Blue) -->
     <linearGradient id="topL3" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#BAE6FD"/>
-      <stop offset="100%" stop-color="#64D2FF"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
     </linearGradient>
     <linearGradient id="leftL3" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#64D2FF"/>
+      <stop offset="0%" stop-color="#38BDF8"/>
       <stop offset="100%" stop-color="#0284C7"/>
     </linearGradient>
     <linearGradient id="rightL3" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="0%" stop-color="#0EA5E9"/>
       <stop offset="100%" stop-color="#0369A1"/>
     </linearGradient>
 
-    <!-- Level 2 (Medium - Soft Lavender) -->
     <linearGradient id="topL2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#DDD6FE"/>
-      <stop offset="100%" stop-color="#A78BFA"/>
+      <stop offset="0%" stop-color="#C7D2FE"/>
+      <stop offset="100%" stop-color="#818CF8"/>
     </linearGradient>
     <linearGradient id="leftL2" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#A78BFA"/>
-      <stop offset="100%" stop-color="#6D28D9"/>
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
     </linearGradient>
     <linearGradient id="rightL2" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6"/>
-      <stop offset="100%" stop-color="#4C1D95"/>
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#3730A3"/>
     </linearGradient>
 
-    <!-- Level 1 (Low - Soft Slate/Teal) -->
-    <linearGradient id="topL1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#5EEAD4" stop-opacity="0.65"/>
-      <stop offset="100%" stop-color="#2DD4BF" stop-opacity="0.55"/>
-    </linearGradient>
-    <linearGradient id="leftL1" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#115E59" stop-opacity="0.65"/>
-    </linearGradient>
-    <linearGradient id="rightL1" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#14B8A6" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#134E4A" stop-opacity="0.65"/>
-    </linearGradient>
-
-    <!-- Ambient City Floor Glow -->
     <radialGradient id="cityFloorGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#5EEAD4" stop-opacity="0.22"/>
-      <stop offset="55%" stop-color="#64D2FF" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#0F172A" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.24"/>
+      <stop offset="55%" stop-color="#38BDF8" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#061017" stop-opacity="0"/>
     </radialGradient>
 
     <!-- Language Bar Gradients -->
     <linearGradient id="barPy" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#64D2FF"/>
-      <stop offset="100%" stop-color="#38BDF8"/>
-    </linearGradient>
-    <linearGradient id="barJs" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#A78BFA"/>
-      <stop offset="100%" stop-color="#C084FC"/>
-    </linearGradient>
-    <linearGradient id="barTs" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#5EEAD4"/>
       <stop offset="100%" stop-color="#2DD4BF"/>
     </linearGradient>
+    <linearGradient id="barJs" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#64D2FF"/>
+    </linearGradient>
+    <linearGradient id="barTs" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
     <linearGradient id="barHtml" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#F472B6"/>
-      <stop offset="100%" stop-color="#FB7185"/>
+      <stop offset="100%" stop-color="#C084FC"/>
     </linearGradient>
 
     <style>
-      .font-mono { font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace; }
       .font-sans { font-family: 'Segoe UI', Inter, system-ui, -apple-system, sans-serif; }
-      @keyframes pulseCity {
-        0%, 100% { opacity: 0.85; }
-        50% { opacity: 1; }
-      }
-      @keyframes floatBadge {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-4px); }
-      }
-      .city-glow { animation: pulseCity 4s infinite ease-in-out; }
-      .float-pill { animation: floatBadge 3.5s infinite ease-in-out; }
+      .font-mono { font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace; }
     </style>
   </defs>
 
-  <!-- Outer Floating Window Container -->
-  <rect x="2" y="2" width="876" height="536" rx="22" fill="url(#bgDark)" stroke="url(#glassStroke)" stroke-width="1.5"/>
+  <!-- Outer Rounded Cinematic Glass Frame -->
+  <rect x="2" y="2" width="876" height="506" rx="22" fill="url(#cineBase)"/>
+  <rect x="2" y="2" width="876" height="506" rx="22" fill="url(#spotMint)"/>
+  <rect x="2" y="2" width="876" height="506" rx="22" fill="url(#spotViolet)"/>
+  <rect x="2" y="2" width="876" height="506" rx="22" fill="none" stroke="url(#rimBorder)" stroke-width="1.4"/>
 
-  <!-- Window Title Bar (macOS / Glass OS Style) -->
-  <rect x="16" y="14" width="848" height="36" rx="11" fill="url(#glassCard)" stroke="url(#glassStroke)" stroke-width="1"/>
-  <circle cx="36" cy="32" r="5.5" fill="#F472B6"/>
-  <circle cx="54" cy="32" r="5.5" fill="#FBBF24"/>
-  <circle cx="72" cy="32" r="5.5" fill="#5EEAD4"/>
-  <text x="96" y="36" fill="#E2E8F0" font-size="12" font-weight="600" class="font-mono">README.md — window://3d-contribution-city-telemetry.glass</text>
-  <rect x="768" y="21" width="82" height="22" rx="7" fill="#0F172A" fill-opacity="0.7" stroke="#64D2FF" stroke-opacity="0.4"/>
-  <text x="786" y="36" fill="#BAE6FD" font-size="11" font-weight="600" class="font-sans">Preview</text>
+  <!-- Section Eyebrow Header -->
+  <text x="34" y="40" fill="#5EEAD4" font-size="12" font-weight="800" letter-spacing="3.2" class="font-sans">3D ARCHITECTURE &amp; TELEMETRY MATRIX</text>
+  <text x="678" y="40" fill="#64748B" font-size="11" class="font-mono">ISOMETRIC // NEURAL_VIEW</text>
 
-  <!-- ═══════════════════════════════════════════════════════════════════════════
-       TOP FLOATING GLASS WINDOW: THE 3D CITY I BUILT THIS YEAR
-       ═══════════════════════════════════════════════════════════════════════════ -->
-  <g transform="translate(16, 62)">
-    <rect x="0" y="0" width="848" height="278" rx="16" fill="url(#glassCard)" stroke="url(#glassStroke)" stroke-width="1.2"/>
-    <line x1="20" y1="1" x2="828" y2="1" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="1.5"/>
+  <!-- ═══ TOP INNER GLASS CARD: 3D ISOMETRIC CONTRIBUTION & ARCHITECTURE SKYLINE ═══ -->
+  <g transform="translate(26, 56)">
+    <rect x="0" y="0" width="828" height="252" rx="16" fill="url(#innerCardFill)" stroke="url(#innerCardRim)" stroke-width="1.2"/>
+    <!-- Left Vertical Glowing Accent Bar -->
+    <rect x="0" y="28" width="5" height="196" rx="2.5" fill="#5EEAD4"/>
 
-    <!-- Left Telemetry Text Column -->
-    <text x="32" y="42" fill="#F8FAFC" font-size="22" font-weight="700" class="font-sans">The city I built this year</text>
-    <text x="585" y="40" fill="#5EEAD4" font-size="11" class="font-mono">3D view: isometric-neural-city (v2.6)</text>
+    <!-- Left Column Details -->
+    <text x="28" y="42" fill="#F8FAFC" font-size="21" font-weight="800" class="font-sans">The digital ecosystem I build</text>
+    <text x="28" y="68" fill="#5EEAD4" font-size="11.5" font-weight="700" letter-spacing="1.5" class="font-mono">ACTIVE ENGINEERING DOMAINS</text>
 
-    <text x="32" y="72" fill="#5EEAD4" font-size="12" font-weight="700" letter-spacing="1.2" class="font-mono">CONTRIBUTIONS &amp; TELEMETRY</text>
-    <text x="32" y="118" fill="#FFFFFF" font-size="44" font-weight="800" class="font-sans">52+</text>
-    <text x="122" y="112" fill="#64D2FF" font-size="13" font-weight="600" class="font-mono">commits &amp; models</text>
+    <text x="28" y="110" fill="#FFFFFF" font-size="38" font-weight="800" class="font-sans">AI · ML · Web</text>
+    <text x="28" y="136" fill="#94A3B8" font-size="13" class="font-sans">Continuous learning, model training &amp; full-stack shipping</text>
 
-    <text x="32" y="146" fill="#CBD5E1" font-size="13.5" class="font-sans">✦ 11 Public Repositories</text>
-    <text x="32" y="168" fill="#94A3B8" font-size="13" class="font-sans">✦ Active Builder · AI / ML / Web</text>
+    <!-- Sub-pills inside top card -->
+    <rect x="28" y="156" width="146" height="66" rx="12" fill="#071318" fill-opacity="0.85" stroke="#5EEAD4" stroke-opacity="0.3"/>
+    <rect x="28" y="170" width="3.5" height="38" rx="1.7" fill="#5EEAD4"/>
+    <text x="42" y="182" fill="#F8FAFC" font-size="13" font-weight="700" class="font-sans">Neural Models</text>
+    <text x="42" y="202" fill="#5EEAD4" font-size="11" class="font-sans">Deep Learning &amp; CV</text>
 
-    <!-- Mini Glass Metric Badges on Left -->
-    <rect x="32" y="188" width="132" height="58" rx="10" fill="#0B1120" fill-opacity="0.65" stroke="#5EEAD4" stroke-opacity="0.35"/>
-    <text x="46" y="208" fill="#94A3B8" font-size="10" class="font-mono">STREAK STATUS</text>
-    <text x="46" y="232" fill="#5EEAD4" font-size="15" font-weight="700" class="font-sans">Active Node</text>
+    <rect x="188" y="156" width="146" height="66" rx="12" fill="#071318" fill-opacity="0.85" stroke="#38BDF8" stroke-opacity="0.3"/>
+    <rect x="188" y="170" width="3.5" height="38" rx="1.7" fill="#38BDF8"/>
+    <text x="202" y="182" fill="#F8FAFC" font-size="13" font-weight="700" class="font-sans">Cloud &amp; Web</text>
+    <text x="202" y="202" fill="#38BDF8" font-size="11" class="font-sans">Scalable Full Stack</text>
 
-    <rect x="176" y="188" width="136" height="58" rx="10" fill="#0B1120" fill-opacity="0.65" stroke="#A78BFA" stroke-opacity="0.35"/>
-    <text x="190" y="208" fill="#94A3B8" font-size="10" class="font-mono">PEAK TIMEZONE</text>
-    <text x="190" y="232" fill="#C4B5FD" font-size="15" font-weight="700" class="font-sans">UTC+8 (MY/SG)</text>
+    <!-- ─── 3D ISOMETRIC CONTRIBUTION SKYLINE (Right Side, Clean without callout sticker) ─── -->
+    <ellipse cx="600" cy="175" rx="200" ry="65" fill="url(#cityFloorGlow)"/>
 
-    <!-- ─── 3D ISOMETRIC CONTRIBUTION CITY SKYLINE (Center-Right) ─── -->
-    <ellipse cx="535" cy="195" rx="220" ry="70" fill="url(#cityFloorGlow)" class="city-glow"/>
-
-    <!-- Isometric Base Grid Lines -->
+    <!-- Isometric Floor Grid -->
     <g stroke="#5EEAD4" stroke-opacity="0.16" stroke-width="1">
-      <line x1="330" y1="195" x2="510" y2="105"/>
-      <line x1="360" y1="210" x2="540" y2="120"/>
-      <line x1="390" y1="225" x2="570" y2="135"/>
-      <line x1="420" y1="240" x2="600" y2="150"/>
-      <line x1="450" y1="255" x2="630" y2="165"/>
-      <line x1="480" y1="270" x2="660" y2="180"/>
+      <line x1="395" y1="175" x2="575" y2="85"/>
+      <line x1="425" y1="190" x2="605" y2="100"/>
+      <line x1="455" y1="205" x2="635" y2="115"/>
+      <line x1="485" y1="220" x2="665" y2="130"/>
+      <line x1="515" y1="235" x2="695" y2="145"/>
 
-      <line x1="510" y1="105" x2="690" y2="195"/>
-      <line x1="480" y1="120" x2="660" y2="210"/>
-      <line x1="450" y1="135" x2="630" y2="225"/>
-      <line x1="420" y1="150" x2="600" y2="240"/>
-      <line x1="390" y1="165" x2="570" y2="255"/>
-      <line x1="360" y1="180" x2="540" y2="270"/>
+      <line x1="575" y1="85" x2="755" y2="175"/>
+      <line x1="545" y1="100" x2="725" y2="190"/>
+      <line x1="515" y1="115" x2="695" y2="205"/>
+      <line x1="485" y1="130" x2="665" y2="220"/>
+      <line x1="455" y1="145" x2="635" y2="235"/>
     </g>
 
-    <!-- Flat Base Tiles (Left side of isometric grid) -->
-    <g stroke="#0F172A" stroke-width="0.8">
-      <polygon points="370,190 390,180 410,190 390,200" fill="#1E293B" fill-opacity="0.8"/>
-      <polygon points="395,202 415,192 435,202 415,212" fill="#134E4A" fill-opacity="0.7"/>
-      <polygon points="420,214 440,204 460,214 440,224" fill="#14B8A6" fill-opacity="0.45"/>
-      <polygon points="395,178 415,168 435,178 415,188" fill="#134E4A" fill-opacity="0.65"/>
-      <polygon points="420,190 440,180 460,190 440,200" fill="#2DD4BF" fill-opacity="0.4"/>
-      <polygon points="445,226 465,216 485,226 465,236" fill="#2DD4BF" fill-opacity="0.5"/>
+    <!-- Flat Isometric Base Nodes -->
+    <g stroke="#071318" stroke-width="0.9">
+      <polygon points="430,172 450,162 470,172 450,182" fill="#134E4A" fill-opacity="0.7"/>
+      <polygon points="455,184 475,174 495,184 475,194" fill="#14B8A6" fill-opacity="0.45"/>
+      <polygon points="480,196 500,186 520,196 500,206" fill="#2DD4BF" fill-opacity="0.4"/>
+      <polygon points="455,160 475,150 495,160 475,170" fill="#134E4A" fill-opacity="0.65"/>
+      <polygon points="480,172 500,162 520,172 500,182" fill="#2DD4BF" fill-opacity="0.5"/>
+      <polygon points="505,208 525,198 545,208 525,218" fill="#5EEAD4" fill-opacity="0.45"/>
     </g>
 
-    <!-- 3D Isometric Skyscrapers (Back-to-Front Painter's Algorithm) -->
-    <!-- Helper geometry: Each tower has Top diamond, Left face, Right face -->
-
-    <!-- Back Row Tower A (x=510, baseY=140, h=55, L3 Sky) -->
+    <!-- 3D Isometric Skyscrapers (Painter's Algorithm Back-to-Front) -->
     <g>
-      <polygon points="510,73 528,82 510,91 492,82" fill="url(#topL3)"/>
-      <polygon points="492,82 510,91 510,146 492,137" fill="url(#leftL3)"/>
-      <polygon points="510,91 528,82 528,137 510,146" fill="url(#rightL3)"/>
+      <polygon points="575,53 593,62 575,71 557,62" fill="url(#topL3)"/>
+      <polygon points="557,62 575,71 575,126 557,117" fill="url(#leftL3)"/>
+      <polygon points="575,71 593,62 593,117 575,126" fill="url(#rightL3)"/>
     </g>
-
-    <!-- Back Row Tower B — TALLEST SPIRE (x=545, baseY=158, h=95, L4 Soft Mint) -->
     <g>
-      <polygon points="545,50 563,59 545,68 527,59" fill="url(#topL4)"/>
-      <polygon points="527,59 545,68 545,163 527,154" fill="url(#leftL4)"/>
-      <polygon points="545,68 563,59 563,154 545,163" fill="url(#rightL4)"/>
+      <polygon points="610,30 628,39 610,48 592,39" fill="url(#topL4)"/>
+      <polygon points="592,39 610,48 610,143 592,134" fill="url(#leftL4)"/>
+      <polygon points="610,48 628,39 628,134 610,143" fill="url(#rightL4)"/>
     </g>
-
-    <!-- Back Row Tower C (x=580, baseY=175, h=70, L2 Lavender) -->
     <g>
-      <polygon points="580,92 598,101 580,110 562,101" fill="url(#topL2)"/>
-      <polygon points="562,101 580,110 580,180 562,171" fill="url(#leftL2)"/>
-      <polygon points="580,110 598,101 598,171 580,180" fill="url(#rightL2)"/>
+      <polygon points="645,72 663,81 645,90 627,81" fill="url(#topL2)"/>
+      <polygon points="627,81 645,90 645,160 627,151" fill="url(#leftL2)"/>
+      <polygon points="645,90 663,81 663,151 645,160" fill="url(#rightL2)"/>
     </g>
-
-    <!-- Back Row Tower D (x=615, baseY=192, h=48, L3 Sky) -->
     <g>
-      <polygon points="615,132 633,141 615,150 597,141" fill="url(#topL3)"/>
-      <polygon points="597,141 615,150 615,198 597,189" fill="url(#leftL3)"/>
-      <polygon points="615,150 633,141 633,189 615,198" fill="url(#rightL3)"/>
+      <polygon points="680,112 698,121 680,130 662,121" fill="url(#topL3)"/>
+      <polygon points="662,121 680,130 680,178 662,169" fill="url(#leftL3)"/>
+      <polygon points="680,130 698,121 698,169 680,178" fill="url(#rightL3)"/>
     </g>
-
-    <!-- Mid Row Tower E (x=475, baseY=165, h=78, L4 Soft Mint) -->
     <g>
-      <polygon points="475,74 493,83 475,92 457,83" fill="url(#topL4)"/>
-      <polygon points="457,83 475,92 475,170 457,161" fill="url(#leftL4)"/>
-      <polygon points="475,92 493,83 493,161 475,170" fill="url(#rightL4)"/>
+      <polygon points="540,54 558,63 540,72 522,63" fill="url(#topL4)"/>
+      <polygon points="522,63 540,72 540,150 522,141" fill="url(#leftL4)"/>
+      <polygon points="540,72 558,63 558,141 540,150" fill="url(#rightL4)"/>
     </g>
-
-    <!-- Mid Row Tower F (x=510, baseY=182, h=52, L2 Lavender) -->
     <g>
-      <polygon points="510,118 528,127 510,136 492,127" fill="url(#topL2)"/>
-      <polygon points="492,127 510,136 510,188 492,179" fill="url(#leftL2)"/>
-      <polygon points="510,136 528,127 528,179 510,188" fill="url(#rightL2)"/>
+      <polygon points="575,98 593,107 575,116 557,107" fill="url(#topL2)"/>
+      <polygon points="557,107 575,116 575,168 557,159" fill="url(#leftL2)"/>
+      <polygon points="575,116 593,107 593,159 575,168" fill="url(#rightL2)"/>
     </g>
-
-    <!-- Mid Row Tower G (x=545, baseY=200, h=64, L3 Sky) -->
     <g>
-      <polygon points="545,124 563,133 545,142 527,133" fill="url(#topL3)"/>
-      <polygon points="527,133 545,142 545,206 527,197" fill="url(#leftL3)"/>
-      <polygon points="545,142 563,133 563,197 545,206" fill="url(#rightL3)"/>
+      <polygon points="610,104 628,113 610,122 592,113" fill="url(#topL3)"/>
+      <polygon points="592,113 610,122 610,186 592,177" fill="url(#leftL3)"/>
+      <polygon points="610,122 628,113 628,177 610,186" fill="url(#rightL3)"/>
     </g>
-
-    <!-- Mid Row Tower H (x=580, baseY=218, h=82, L4 Soft Mint) -->
     <g>
-      <polygon points="580,124 598,133 580,142 562,133" fill="url(#topL4)"/>
-      <polygon points="562,133 580,142 580,224 562,215" fill="url(#leftL4)"/>
-      <polygon points="580,142 598,133 598,215 580,224" fill="url(#rightL4)"/>
+      <polygon points="645,104 663,113 645,122 627,113" fill="url(#topL4)"/>
+      <polygon points="627,113 645,122 645,204 627,195" fill="url(#leftL4)"/>
+      <polygon points="645,122 663,113 663,195 645,204" fill="url(#rightL4)"/>
     </g>
-
-    <!-- Mid Row Tower I (x=615, baseY=235, h=42, L1 Teal) -->
     <g>
-      <polygon points="615,180 633,189 615,198 597,189" fill="url(#topL1)"/>
-      <polygon points="597,189 615,198 615,240 597,231" fill="url(#leftL1)"/>
-      <polygon points="615,198 633,189 633,231 615,240" fill="url(#rightL1)"/>
+      <polygon points="680,152 698,161 680,170 662,161" fill="url(#topL4)"/>
+      <polygon points="662,161 680,170 680,218 662,209" fill="url(#leftL4)"/>
+      <polygon points="680,170 698,161 698,209 680,218" fill="url(#rightL4)"/>
     </g>
-
-    <!-- Front Row Tower J (x=475, baseY=212, h=45, L3 Sky) -->
     <g>
-      <polygon points="475,155 493,164 475,173 457,164" fill="url(#topL3)"/>
-      <polygon points="457,164 475,173 475,218 457,209" fill="url(#leftL3)"/>
-      <polygon points="475,173 493,164 493,209 475,218" fill="url(#rightL3)"/>
+      <polygon points="540,135 558,144 540,153 522,144" fill="url(#topL3)"/>
+      <polygon points="522,144 540,153 540,198 522,189" fill="url(#leftL3)"/>
+      <polygon points="540,153 558,144 558,189 540,198" fill="url(#rightL3)"/>
     </g>
-
-    <!-- Front Row Tower K (x=510, baseY=230, h=38, L4 Soft Mint) -->
     <g>
-      <polygon points="510,180 528,189 510,198 492,189" fill="url(#topL4)"/>
-      <polygon points="492,189 510,198 510,236 492,227" fill="url(#leftL4)"/>
-      <polygon points="510,198 528,189 528,227 510,236" fill="url(#rightL4)"/>
+      <polygon points="575,160 593,169 575,178 557,169" fill="url(#topL4)"/>
+      <polygon points="557,169 575,178 575,216 557,207" fill="url(#leftL4)"/>
+      <polygon points="575,178 593,169 593,207 575,216" fill="url(#rightL4)"/>
     </g>
-
-    <!-- Front Row Tower L (x=545, baseY=248, h=30, L2 Lavender) -->
     <g>
-      <polygon points="545,206 563,215 545,224 527,215" fill="url(#topL2)"/>
-      <polygon points="527,215 545,224 545,254 527,245" fill="url(#leftL2)"/>
-      <polygon points="545,224 563,215 563,245 545,254" fill="url(#rightL2)"/>
-    </g>
-
-    <!-- Floating Callout Pill (Matches reference image!) -->
-    <g transform="translate(658, 76)" class="float-pill">
-      <rect x="0" y="0" width="168" height="54" rx="27" fill="#CCFBF1" stroke="#5EEAD4" stroke-width="1.5"/>
-      <!-- Mini 3D Bar Icon -->
-      <rect x="18" y="29" width="5" height="11" rx="2" fill="#0F172A"/>
-      <rect x="26" y="23" width="5" height="17" rx="2" fill="#0F172A"/>
-      <rect x="34" y="16" width="5" height="24" rx="2" fill="#0F172A"/>
-      <text x="48" y="24" fill="#0F172A" font-size="11.5" font-weight="700" class="font-sans">3D contribution</text>
-      <text x="48" y="40" fill="#0F172A" font-size="11.5" font-weight="700" class="font-sans">visualization</text>
-      <!-- Curved Pointer Arrow -->
-      <path d="M 85 56 Q 82 88 42 94" fill="none" stroke="#99F6E4" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M 48 88 L 40 94 L 50 99" fill="none" stroke="#99F6E4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <polygon points="610,186 628,195 610,204 592,195" fill="url(#topL2)"/>
+      <polygon points="592,195 610,204 610,234 592,225" fill="url(#leftL2)"/>
+      <polygon points="610,204 628,195 628,225 610,234" fill="url(#rightL2)"/>
     </g>
   </g>
 
-  <!-- ═══════════════════════════════════════════════════════════════════════════
-       BOTTOM LEFT FLOATING GLASS WINDOW: LANGUAGE STACK
-       ═══════════════════════════════════════════════════════════════════════════ -->
-  <g transform="translate(16, 354)">
-    <rect x="0" y="0" width="414" height="170" rx="16" fill="url(#glassCard)" stroke="url(#glassStroke)" stroke-width="1.2"/>
-    <line x1="20" y1="1" x2="394" y2="1" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="1.5"/>
+  <!-- ═══ BOTTOM LEFT INNER GLASS CARD: LANGUAGE STACK ═══ -->
+  <g transform="translate(26, 322)">
+    <rect x="0" y="0" width="404" height="162" rx="16" fill="url(#innerCardFill)" stroke="url(#innerCardRim)" stroke-width="1.2"/>
+    <rect x="0" y="24" width="5" height="114" rx="2.5" fill="#38BDF8"/>
 
-    <text x="24" y="34" fill="#F8FAFC" font-size="17" font-weight="700" class="font-sans">Language Stack</text>
-    <text x="295" y="33" fill="#5EEAD4" font-size="11" class="font-mono">&gt; stack.scan_</text>
-    <text x="24" y="52" fill="#5EEAD4" font-size="11.5" class="font-sans">Repository-weighted technologies</text>
+    <text x="24" y="34" fill="#F8FAFC" font-size="16.5" font-weight="800" class="font-sans">Language Stack</text>
+    <text x="285" y="33" fill="#5EEAD4" font-size="11" class="font-mono">&gt; stack.scan_</text>
+    <text x="24" y="52" fill="#5EEAD4" font-size="11.5" class="font-sans">Primary engineering distribution</text>
 
-    <!-- Lang 1: Python -->
-    <circle cx="30" cy="78" r="5.5" fill="#64D2FF"/>
-    <text x="44" y="82" fill="#F8FAFC" font-size="12.5" font-weight="600" class="font-sans">Python (AI / ML)</text>
-    <text x="165" y="82" fill="#64D2FF" font-size="12" font-weight="700" class="font-mono">40%</text>
-    <rect x="208" y="72" width="180" height="8" rx="4" fill="#0B1120" fill-opacity="0.8"/>
-    <rect x="208" y="72" width="144" height="8" rx="4" fill="url(#barPy)"/>
+    <circle cx="30" cy="76" r="5" fill="#5EEAD4"/>
+    <text x="44" y="80" fill="#F8FAFC" font-size="12" font-weight="600" class="font-sans">Python (AI / ML)</text>
+    <text x="165" y="80" fill="#5EEAD4" font-size="11.5" font-weight="700" class="font-mono">42%</text>
+    <rect x="205" y="71" width="175" height="7.5" rx="3.7" fill="#071318"/>
+    <rect x="205" y="71" width="142" height="7.5" rx="3.7" fill="url(#barPy)"/>
 
-    <!-- Lang 2: JavaScript / TypeScript -->
-    <circle cx="30" cy="105" r="5.5" fill="#A78BFA"/>
-    <text x="44" y="109" fill="#F8FAFC" font-size="12.5" font-weight="600" class="font-sans">JavaScript / TS</text>
-    <text x="165" y="109" fill="#A78BFA" font-size="12" font-weight="700" class="font-mono">32%</text>
-    <rect x="208" y="99" width="180" height="8" rx="4" fill="#0B1120" fill-opacity="0.8"/>
-    <rect x="208" y="99" width="118" height="8" rx="4" fill="url(#barJs)"/>
+    <circle cx="30" cy="101" r="5" fill="#38BDF8"/>
+    <text x="44" y="105" fill="#F8FAFC" font-size="12" font-weight="600" class="font-sans">TypeScript / JS</text>
+    <text x="165" y="105" fill="#38BDF8" font-size="11.5" font-weight="700" class="font-mono">30%</text>
+    <rect x="205" y="96" width="175" height="7.5" rx="3.7" fill="#071318"/>
+    <rect x="205" y="96" width="114" height="7.5" rx="3.7" fill="url(#barJs)"/>
 
-    <!-- Lang 3: Jupyter / Data Science -->
-    <circle cx="30" cy="132" r="5.5" fill="#5EEAD4"/>
-    <text x="44" y="136" fill="#F8FAFC" font-size="12.5" font-weight="600" class="font-sans">Jupyter / Data</text>
-    <text x="165" y="136" fill="#5EEAD4" font-size="12" font-weight="700" class="font-mono">18%</text>
-    <rect x="208" y="126" width="180" height="8" rx="4" fill="#0B1120" fill-opacity="0.8"/>
-    <rect x="208" y="126" width="76" height="8" rx="4" fill="url(#barTs)"/>
+    <circle cx="30" cy="126" r="5" fill="#818CF8"/>
+    <text x="44" y="130" fill="#F8FAFC" font-size="12" font-weight="600" class="font-sans">Jupyter / Data</text>
+    <text x="165" y="130" fill="#818CF8" font-size="11.5" font-weight="700" class="font-mono">18%</text>
+    <rect x="205" y="121" width="175" height="7.5" rx="3.7" fill="#071318"/>
+    <rect x="205" y="121" width="76" height="7.5" rx="3.7" fill="url(#barTs)"/>
 
-    <!-- Lang 4: HTML / CSS -->
-    <circle cx="30" cy="155" r="5.5" fill="#F472B6"/>
-    <text x="44" y="159" fill="#F8FAFC" font-size="12.5" font-weight="600" class="font-sans">HTML / Modern UI</text>
-    <text x="165" y="159" fill="#F472B6" font-size="12" font-weight="700" class="font-mono">10%</text>
-    <rect x="208" y="149" width="180" height="8" rx="4" fill="#0B1120" fill-opacity="0.8"/>
-    <rect x="208" y="149" width="48" height="8" rx="4" fill="url(#barHtml)"/>
+    <circle cx="30" cy="148" r="5" fill="#F472B6"/>
+    <text x="44" y="152" fill="#F8FAFC" font-size="12" font-weight="600" class="font-sans">HTML / CSS UI</text>
+    <text x="165" y="152" fill="#F472B6" font-size="11.5" font-weight="700" class="font-mono">10%</text>
+    <rect x="205" y="143" width="175" height="7.5" rx="3.7" fill="#071318"/>
+    <rect x="205" y="143" width="46" height="7.5" rx="3.7" fill="url(#barHtml)"/>
   </g>
 
-  <!-- ═══════════════════════════════════════════════════════════════════════════
-       BOTTOM RIGHT FLOATING GLASS WINDOW: FEATURED FOCUS DOMAINS & MODULES
-       ═══════════════════════════════════════════════════════════════════════════ -->
-  <g transform="translate(446, 354)">
-    <rect x="0" y="0" width="418" height="170" rx="16" fill="url(#glassCard)" stroke="url(#glassStroke)" stroke-width="1.2"/>
-    <line x1="20" y1="1" x2="398" y2="1" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="1.5"/>
+  <!-- ═══ BOTTOM RIGHT INNER GLASS CARD: ACTIVE BUILD MODULES ═══ -->
+  <g transform="translate(446, 322)">
+    <rect x="0" y="0" width="408" height="162" rx="16" fill="url(#innerCardFill)" stroke="url(#innerCardRim)" stroke-width="1.2"/>
+    <rect x="0" y="24" width="5" height="114" rx="2.5" fill="#818CF8"/>
 
-    <text x="24" y="34" fill="#5EEAD4" font-size="12" class="font-mono">Modules.list &nbsp;./domains.sh --active</text>
-    <text x="335" y="34" fill="#94A3B8" font-size="11.5" class="font-mono">2 pinned</text>
+    <text x="24" y="34" fill="#F8FAFC" font-size="16.5" font-weight="800" class="font-sans">Active Workstreams</text>
+    <text x="260" y="33" fill="#818CF8" font-size="11" class="font-mono">./workspace --active</text>
 
-    <!-- Sub-Window Card 1 -->
-    <g transform="translate(20, 52)">
-      <rect x="0" y="0" width="182" height="100" rx="12" fill="#0B1120" fill-opacity="0.65" stroke="#64D2FF" stroke-opacity="0.35"/>
-      <circle cx="20" cy="24" r="5" fill="#A78BFA"/>
-      <text x="32" y="28" fill="#F8FAFC" font-size="13" font-weight="700" class="font-mono">ai-ml-models</text>
-      <text x="16" y="52" fill="#94A3B8" font-size="11" class="font-sans">Deep learning, computer</text>
-      <text x="16" y="68" fill="#94A3B8" font-size="11" class="font-sans">vision &amp; neural pipelines</text>
-      <text x="16" y="88" fill="#64D2FF" font-size="10.5" font-weight="600" class="font-mono">● PyTorch · TensorFlow</text>
+    <!-- Nested Sub-Card 1 -->
+    <g transform="translate(20, 48)">
+      <rect x="0" y="0" width="178" height="96" rx="12" fill="#071318" fill-opacity="0.85" stroke="#5EEAD4" stroke-opacity="0.32"/>
+      <rect x="0" y="18" width="4" height="60" rx="2" fill="#5EEAD4"/>
+      <text x="18" y="28" fill="#F8FAFC" font-size="13.5" font-weight="700" class="font-sans">AI / ML Pipelines</text>
+      <text x="18" y="48" fill="#5EEAD4" font-size="11.5" class="font-sans">Current focus</text>
+      <text x="18" y="76" fill="#94A3B8" font-size="10.5" class="font-mono">PyTorch · OpenCV</text>
     </g>
 
-    <!-- Sub-Window Card 2 -->
-    <g transform="translate(216, 52)">
-      <rect x="0" y="0" width="182" height="100" rx="12" fill="#0B1120" fill-opacity="0.65" stroke="#5EEAD4" stroke-opacity="0.35"/>
-      <circle cx="20" cy="24" r="5" fill="#5EEAD4"/>
-      <text x="32" y="28" fill="#F8FAFC" font-size="13" font-weight="700" class="font-mono">fullstack-apps</text>
-      <text x="16" y="52" fill="#94A3B8" font-size="11" class="font-sans">Scalable web architecture</text>
-      <text x="16" y="68" fill="#94A3B8" font-size="11" class="font-sans">&amp; modern UI engineering</text>
-      <text x="16" y="88" fill="#5EEAD4" font-size="10.5" font-weight="600" class="font-mono">● React · Next.js · FastAPI</text>
+    <!-- Nested Sub-Card 2 -->
+    <g transform="translate(210, 48)">
+      <rect x="0" y="0" width="178" height="96" rx="12" fill="#071318" fill-opacity="0.85" stroke="#818CF8" stroke-opacity="0.32"/>
+      <rect x="0" y="18" width="4" height="60" rx="2" fill="#818CF8"/>
+      <text x="18" y="28" fill="#F8FAFC" font-size="13.5" font-weight="700" class="font-sans">Full Stack Web</text>
+      <text x="18" y="48" fill="#A78BFA" font-size="11.5" class="font-sans">In active build queue</text>
+      <text x="18" y="76" fill="#94A3B8" font-size="10.5" class="font-mono">Next.js · FastAPI</text>
     </g>
   </g>
 </svg>
